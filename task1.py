@@ -1,6 +1,7 @@
-a = 10
-b = 'яблоко'
-c = int(input('Введите число: '))
-d = input('Введите строку: ')
-e = int(input('Введите еще одно число: '))
-print(a, b, c, d, e)
+string = 'abcd'
+integer = 1
+new_tuple = ('2', 'a')
+new_set = {'apple', 'banana'}
+my_list = [string, integer, new_tuple, new_set]
+for i in my_list:
+    print(type(i))
