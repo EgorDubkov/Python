@@ -1,11 +1,5 @@
-string = input()
-words = []
-counter = 1
-for i in range(string.count(' ') + 1):
-    words = string.split()
-    if len(str(words)) <= 10:
-        print(counter, " ", words[i])
-        counter += 1
-    else:
-        print(counter, " ", words[i][0:10])
-        counter +=1
+x = int(input())
+y = int(input())
+def my_func(x, y):
+    return 1 / x ** abs(y)
+print(my_func(x, y))
