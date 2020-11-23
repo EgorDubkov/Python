@@ -1,11 +1,6 @@
-a = int(input('Введите занчение выручки фирмы: '))
-b = int(input('Введите занчение издержек фирмы: '))
-if a > b:
-    print("Прибыль")
-    print("Прибыль к выручке: ", (a-b)/a)
-elif b > a:
-    print("Убыток")
-else:
-    print("В ноль")
-c = int(input(("Введите численность сотрудников фирмы: ")))
-print("Прибыль фирмы в расчете на одного сотрудника: ", (a-b)/c)
+from functools import reduce
+my_list = [el for el in range(100, 1001) if el % 2 == 0]
+def my_func(prev_el, el):
+    return prev_el * el
+
+print(reduce(my_func, my_list)) 

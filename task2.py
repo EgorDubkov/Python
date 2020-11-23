@@ -1,11 +1,3 @@
-new_list = []
-i = 0
-el = 0
-element_count = int(input())
-while i < element_count:
-    new_list.append(input())
-    i += 1
-for el in range(int(len(new_list)/2)):
-        new_list[el], new_list[el + 1] = new_list [el + 1], new_list[el]
-        el += 2
-print(new_list) 
+my_list = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
+new_list = [el for el in my_list if el > my_list[my_list.index(el) - 1]]
+print(new_list)

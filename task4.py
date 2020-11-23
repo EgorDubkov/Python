@@ -1,11 +1,3 @@
-string = input()
-words = []
-counter = 1
-for i in range(string.count(' ') + 1):
-    words = string.split()
-    if len(str(words)) <= 10:
-        print(counter, " ", words[i])
-        counter += 1
-    else:
-        print(counter, " ", words[i][0:10])
-        counter +=1
+my_list = [2, 2, 2, 7, 23, 1, 44, 44, 3, 2, 10, 7, 4, 11]
+new_list = [el for el in my_list if my_list.count(el) == 1]
+print(new_list)
