@@ -1,0 +1,7 @@
+Fizra: 30 20 20
+Math: 10 50 10
+History: 50 20 20
+Physics: 70 20 18
+Informatics: 40 12 20
+Literature: 10 8 10
+Russian: 90 20 20
