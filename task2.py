@@ -10,9 +10,9 @@ class Road():
         
     def mass(self):
         self.weigth = 25
-        self.tickness = 0.05
-        mass = self._length * self._width * self.weigth * self.thickness / 1000
+        self.tickness = 5
+        mass = self._length * self._width * self.weigth * self.tickness / 1000
         print(f'{mass}')
         
-r = Road(25, 10000)
+r = Road(20, 5000)
 print(r.mass())
