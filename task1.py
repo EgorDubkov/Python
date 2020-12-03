@@ -11,10 +11,10 @@ class Matrix:
                 mat[i][j] = self.list_1[i][j] + self.list_2[i][j]
         return str('\n'.join(['\t'.join([str(j) for j in i]) for i in mat]))
 
-new_matrix = Matrix([[5, 18, 11],
-                    [6, 17, 23],
-                    [41, 50, 9]],
-                   [[45, 8, 2],
-                    [6, 7, 93],
-                    [24, 5, 97]])
+new_matrix = Matrix([[1, 1, 1],
+                    [1, 1, 1],
+                    [1, 1, 1]],
+                   [[2, 2, 2],
+                    [2, 2, 2],
+                    [2, 2, 2]])
 print(new_matrix.__add__())
